@@ -8,7 +8,7 @@ body {
 	margin: 0 auto 0 auto;
 	font-family: Arial, sans-serif;
 	display: grid;
-	grid-template: auto 1fr auto / auto auto;
+	grid-template: auto 1fr auto / auto 1fr auto;
 }
 
 header {
