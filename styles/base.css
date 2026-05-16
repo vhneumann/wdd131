@@ -16,6 +16,11 @@ h1 {
 	text-align: center;
 }
 
+p {
+    padding: 0;
+    margin: 1rem;
+}
+
 /* Mobile *************************************/
 header {
 	background-color: #bbb;
@@ -57,10 +62,20 @@ nav a:hover {
 }
 
 main {
-	max-weidth: 1000px;
+	max-width: 1000px;
 	display: grid;
 	grid-template: auto auto / auto auto;
 	padding: 1rem;
+}
+
+main img    {
+    width: 150px;
+    height: auto;
+    border: 1px solid rgb(0 0 0 / 0.2); /* 1 */
+    padding: 0.25rem;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem
 }
 
 .card {
@@ -85,7 +100,8 @@ footer {
 header, footer {
 	background-color: #999;
 	color: #fff;
-	
+}
+
 /* Larger Views ***********************************/
 
 @media (min-width: 640px) {
@@ -97,25 +113,3 @@ header, footer {
 		flex: 1 1 100%;
 	}
 }
-/*
-.header {
-    color:blueviolet;
-
-}
-
-.header span {
-    display: block
-}
-
-.nav {
-    display: flex;
-}
-
-.main {
-    display:grid;
-}
-
-.main card {
-    
-}
-*/
