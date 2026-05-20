@@ -48,6 +48,30 @@ for (const i in studentReport) {
 // let currentDay = today();
 // const dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
 // const diaActual = dias[new Date().getDay()];
-const weekDays = ["Sunday","Monday","Tuesday","Wedenesday","Thursday","Friday","Saturday"];
-let currentDay = weekDays[new Date().getDay()];
+//
+// This one works but when (currentDate + DAYS) > 14 the count 'folds'
+// and the resulting printout chops. 
+const DAYS = 3;
+const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+let currentDate = new Date().getDay();
+let topDate;
+if ((currentDate + DAYS) < 7) {
+	topDate = currentDate + DAYS;
+} else {
+	topDate = 7;
+}
+let futureDate;
+if ((currentDate + DAYS) < 7) {
+	futureDate = 0;
+} else {
+	futureDate = (currentDate + DAYS) % 7;
+}
+for (i = currentDate; i < topDate; i++) {
+    console.log(weekDays[i]);
+}
+for (i = 0; i < futureDate; i++) {
+    console.log(weekDays[i]);
+}
+
+
 
