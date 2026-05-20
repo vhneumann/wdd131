@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Víctor H. Neumann</title>
+    <meta name="description" content="Want to be a Web Developer? The WDD 131 course is a fast track to learn the fundamentals of Dynamic Web Programming!">
+    <meta name="author" content="Victor H. Neumann">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Neumann</h1>
+    <header>
+        <h1><span id="course-title">WDD 131 - Dynamic Web Fundamentals</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/vhneumann" class="active">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng&id=p26#p26">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Víctor Neumann</h1>
+        <section class="card left">
+        <h2>About me</h2>
+        <img src="images/vhn-sm.jpg" alt="Victor Neumann" width="150">
+
+        <p>Hello! My name is Victor Neumann, from Salta Argentina. Salta is a beautiful city located in the North West of Argentina, in a valley surrounded by mountains. The climate is temperate and comfortable.</p>
+
+        <p>I served a regular mission thirty-seven years ago, to Buenos Aires South Argentina. After returning from the mission I met Virginia Gallo. Later, we married and were sealed to each other in the Buenos Aires Argentina Temple. We have been blessed with six children, four sons and two daughters. Three of them have also served missions. The oldest one is married, and sealed in the Temple, having one child.</p>
+
+        <p>Virginia and I serve in our ward, and also as temple workers, every Saturday. We also serve as Service Missionaries in English Connect 3, and pursue careers in BYU Pathway. The career I chose is Web Development.</p>
+
+        <p>I enjoy growing a vegetable garden, walking and taking pictures. Those activities help me release the stress from work.</p>
+        </section>
+        <section class="card right">
+            <h2>Web Dev Resources</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Víctor H. Neumann - Salta, Argentina</p>
+        <p >Last Modification: <span id="last-modified-date"></span></p>
+    </footer>
 </body>
 
 </html>
