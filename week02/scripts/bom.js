@@ -1,4 +1,4 @@
-// here goes the code for the BOM page.
+// here goes the javascript code for the BOM page.
 const input = document.queryselector('#favchap');
 const button = document.queryselector('button');
 const list = document.queryselector('list');
