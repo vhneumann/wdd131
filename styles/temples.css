@@ -11,7 +11,6 @@ body {
 
 header {
 	display: flex;
-	color: antiquewhite;
 	gap: 1rem;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -19,17 +18,41 @@ header {
 }
 
 main {
-	width: 90%;
-	display: flex;
-	flex-wrap: wrap;
+	width: 100%;
+	/* display: flex;
+	flex-wrap: wrap; */
+	display: block;
 	gap: 1rem;
 	margin: 0 auto;
+	padding: 0;
+}
+
+main h1 {
+	text-align: center;
 	padding: 1rem;
-	align-items: center;
+}
+
+main section {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 1rem;
 }
 
 main figure {
-	flex: 1;
+	margin: 0 auto;
+}
+
+main img {
+	margin: 0 auto;
+	min-width: 90%;
+	border-radius: 2%;
+}
+
+main figcaption {
+	text-align: center;
 }
 
 footer {
@@ -43,6 +66,7 @@ header, main {
 
 header, footer {
 	background-color: #36454f;
+	color: #fff;
 }
 
 header p {
@@ -50,7 +74,7 @@ header p {
 }
 nav {
 	background-color: #36454f;
-	margin: 0 auto;
+	margin: 0 0 0 auto;
 	max-width: 800px;
 }
 

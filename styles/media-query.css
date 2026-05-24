@@ -18,10 +18,11 @@ header, main, footer {
 
 main {
     display: grid;
-    grid-template-column: 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
 section {
     background-color: #bef;
     padding: 0.25rem;
+}
