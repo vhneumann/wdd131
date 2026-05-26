@@ -49,7 +49,11 @@ section {
 
 
 article p {
-	text-align: justify;
+	text-align: left;
+    /* word-break: break-all;
+	 hyphens: auto; */
+	overflow-wrap: break-word;
+	hyphens: auto;
 }
 
 }
