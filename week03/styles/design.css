@@ -31,7 +31,7 @@ main {
 h2 {
 	color: navy;
 	text-align: left;
-	ppadding-left: 1rem;
+	padding-left: 1rem;
 	grid-column: 1 / span 3;
 }
 
