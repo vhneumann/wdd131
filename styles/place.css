@@ -27,6 +27,10 @@ header h1 {
     padding: 1rem;
 }
 
+/* header img {
+    width: 800px;
+    height: auto;
+} */
 main {
     background-color: #fff;
     color: #000;
