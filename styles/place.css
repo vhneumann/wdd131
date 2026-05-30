@@ -47,6 +47,11 @@ main section {
     text-align: center;
 }
 
+main img {
+    margin: 0 auto;
+    align-items: center;
+}
+
 .hero img {
     margin: 0 auto;
     width: 100%;
