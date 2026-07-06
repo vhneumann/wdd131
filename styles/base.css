@@ -1,4 +1,4 @@
-/* Base CSS rules for index page - WDD131 - Victor Hugo Neumann - 2026 Block 3 */
+/* Base CSS rules for index page - WDD131 - Victor Hugo Neumann - 2026 Block 4 */
 
 * {
 	margin: 0;
@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 .active {
-	color: yellow;
+	color: #ff0;
 }
 
 main {
@@ -76,7 +76,7 @@ main img {
 	border: 1px solid rgb(0 0 0 / 0.2);
 	/* 1 */
 	padding: 0.25rem;
-	box-shadow: 0 0 30px gray;
+	box-shadow: 0 0 30px #808080;
 	float: right;
 	margin: 0 0 1rem 1rem
 }
