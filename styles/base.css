@@ -11,10 +11,17 @@ body {
 	font-weight: 400;
 }
 
-h1 {
+h1,
+h2 {
 	font-weight: 100;
 	text-align: center;
-	padding: 1rem;
+	padding: 5rem auto;
+	color: #fff;
+}
+
+h2 {
+	background-color: #004D72;
+	width: 100%;
 }
 
 p {
@@ -22,10 +29,11 @@ p {
 	margin: 1rem;
 }
 
-/* Mobile *************************************/
+/* Mobile */
+
 header {
-	background-color: #bbb;
-	/* display: flex; */
+	display: block;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 	padding: 0;
@@ -37,21 +45,24 @@ header {
 
 nav {
 	background-color: #36454f;
-	margin: 0 auto;
-	max-width: 800px;
+	display: flex;
+	justify-items: stretch;
+	/* align-content: stretch; */
+
+	/* width: 100%; */
+	/* margin: 0 auto; */
+	/* max-width: 800px; */
 }
 
 nav ul {
 	list-style-type: none;
 }
 
-
-
 nav a {
 	display: block;
 	color: #fff;
 	text-align: center;
-	padding: 1rem;
+	padding: 1rem auto;
 	text-decoration: none;
 }
 
@@ -73,7 +84,7 @@ main {
 main img {
 	width: 150px;
 	height: auto;
-	border: 1px solid rgb(0 0 0 / 0.2);
+	border: 1px solid #00000033;
 	/* 1 */
 	padding: 0.25rem;
 	box-shadow: 0 0 30px #808080;
@@ -85,7 +96,6 @@ main img {
 	border: 1px solid #999;
 	border-radius: 0.5rem;
 	padding: 2rem;
-	align-items: center;
 }
 
 .left {
@@ -94,6 +104,7 @@ main img {
 
 .right {
 	grid-column: 3 / 4;
+	align-content: normal;
 }
 
 footer {
@@ -103,16 +114,22 @@ footer {
 
 header,
 footer {
-	background-color: #999;
+	background-color: #1D4D72;
 	color: #fff;
 }
 
-/* Larger Views ***********************************/
+/* Larger Views */
 
 @media (min-width: 640px) {
+	nav {
+		display: flex;
+		justify-items: stretch;
+		flex: 1 1 auto;
+		width: 100%;
+	}
+
 	nav ul {
 		display: flex;
-
 	}
 
 	nav ul li {
