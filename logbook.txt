@@ -1,0 +1,11 @@
+    2026-07-09
+    In this file I tested the following:
+    1 - CSS float to display an image to the right of text.
+    2 - Enough text to flow around and below the picture.
+    3 - 'span' to change the style of code text inside <h1></h1>
+    
+    I will use 'float' to position my photograph in my home page.
+    
+    /* --------------------------------------------------------- */
+    
+    
