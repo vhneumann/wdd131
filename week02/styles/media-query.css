@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 1.333vmax;
+}
+
 body {
     font-family: Roboto, Arial, sans-serif;
 }
