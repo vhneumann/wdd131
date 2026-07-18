@@ -1,106 +1,101 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  /* Min 16px, Preferred 2.5vh, Max 24px */
+  font-size: clamp(16px, 2.5vh, 24px);
+}
+
+html,
 body {
-	font-family:Arial, Helvetica, sans-serif;
-	padding: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.75rem;
+  text-align: center;
+  background-color: #364580;
+  color: #fff;
+  font-weight: 500;
 }
 
 header {
-	display: flex;
-	gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;	
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-main {
-	width: 100%;
-	/* display: flex;
-	flex-wrap: wrap; */
-	display: block;
-	gap: 1rem;
-	margin: 0 auto;
-	padding: 0;
+#pHeader {
+  font-size: 1.8rem;
 }
 
-main h1 {
-	text-align: center;
-	padding: 1rem;
-}
-
-main section {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	gap: 1rem;
-}
-
-main figure {
-	margin: 0 auto;
-}
-
-main img {
-	margin: 0 auto;
-	min-width: 90%;
-	border-radius: 2%;
-}
-
-main figcaption {
-	text-align: center;
-}
-
-footer {
-	text-align: center;
-	padding: 0.5rem;
-}
-
-header, main {
-	margin: 0 auto;
-}
-
-header, footer {
-	background-color: #36454f;
-	color: #fff;
-}
-
-header p {
-	font-size: 2rem;
-}
 nav {
-	background-color: #36454f;
-	margin: 0 0 0 auto;
-	max-width: 800px;
+  display: none;
 }
 
 nav ul {
-	list-style-type: none;
-	justify-content: right;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+nav ul li {
+  flex: 1 1 100%;
 }
 
 nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: none;
 }
 
 nav a:hover {
-	border: 1px solid #fff;
-}
-.active {
-	color: yellow;
+  background-color: #406090;
 }
 
-@media (min-width: 640px) {
-	nav ul {
-		display: flex;
+main {
+  margin: 1rem auto;
+  text-align: center;
+}
 
-	}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  place-items: center;
+}
+
+figure {
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+figure img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0.5rem;
+}
+
+figure figcaption {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+p {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  padding: 0;
 }
