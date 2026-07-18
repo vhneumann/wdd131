@@ -1,0 +1,25 @@
+@media screen and (min-width: 850px)  {
+  main  {
+    max-width: 800px;
+    margin: 1rem auto;
+  }
+  nav   {
+    display: block;
+  }
+  nav ul   {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  nav a    {
+    display: block;
+    color: #ff0;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+
+}
