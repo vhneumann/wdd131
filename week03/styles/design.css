@@ -1,8 +1,8 @@
 /* css directives here */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -24,7 +24,7 @@ h1 {
 
 main {
 	display: grid;
-    grid-template-columns: 2fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	grid-gap: 1.5rem;
 }
 
@@ -40,7 +40,7 @@ h3 {
 }
 
 section {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 /*article {
@@ -50,20 +50,19 @@ section {
 
 article p {
 	text-align: left;
-    /* word-break: break-all;
+	/* word-break: break-all;
 	 hyphens: auto; */
 	overflow-wrap: break-word;
 	hyphens: auto;
 }
 
-}
 list {
 	text-align: justify;
 }
 
 
 .callout {
-    padding: 1rem;
+	padding: 1rem;
 	color: #ccc;
 	background-color: #352963;
 	grid-column: 1 / span 3;
