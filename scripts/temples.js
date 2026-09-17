@@ -1,0 +1,1 @@
+// Script to modify the navigation bar of 'temples.html'
