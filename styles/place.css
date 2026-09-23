@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* Set the encoding of the style sheet to Unicode UTF-8 */
+/* CSS directives, mobile-first */
+
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-flagLightBlue: rgb(117, 170, 219);
+    --color-darkBlue-1: rgb(30, 40, 70);
+    --color-black: rgb(0, 0, 0);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 2vmax;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+header,
+footer {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: var(--color-flagLightBlue);
+    color: var(--color-darkBlue-1);
+    padding: 1rem 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+main {
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+picture {
+    margin: 0;
+    padding: 0;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    background-color: var(--color-white);
+    border: 2px solid rgb(from var(--color-black) r g b / 30%);
+    text-align: center;
+}
+
+.datatable {
+    padding: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.col-names {
+    text-align: right;
+    font-weight: 700;
+    padding-right: 0.25rem;
+}
+
+.col-values {
+    text-align: left;
+    font-weight: 400;
+    padding-left: 0.25rem;
+}

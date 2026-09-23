@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina</title>
+    <meta name="description"
+        content="Enjoy viewing images from Argentina, stay informed about its features and weather">
+    <meta name="author" content="Víctor H. Neumann">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+            <source media="(min-width: 700px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-small.webp" alt="Hornero">
+        </picture>
+
+        <section id="country-data">
+            <h2>Data</h2>
+            <div class="datatable">
+                <div class="row">
+                    <div class="col-names">Area:</div>
+                    <div class="col-values">2,780,000 km2</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Population:</div>
+                    <div class="col-values">46,044,000</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Capital:</div>
+                    <div class="col-values">Buenos Aires</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Languages:</div>
+                    <div class="col-values">Spanish</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Currency:</div>
+                    <div class="col-values">Argentine Peso</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Time Zone:</div>
+                    <div class="col-values">UTC-3</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Calling Code:</div>
+                    <div class="col-values">+54</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Internet TLD:</div>
+                    <div class="col-values">.ar</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="country-weather">
+            <h2>Weather</h2>
+            <img src="images/cloudy-icon.svg" width="80" alt="Cloudy weather" loading="lazy">
+            <div class="datatable">
+                <div class="row">
+                    <div class="col-names">Temperature:</div>
+                    <div class="col-values" id="air-temp">7 &#8451;</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Conditions:</div>
+                    <div class="col-values">Cloudy</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Wind:</div>
+                    <div class="col-values" id="wind-speed">12 km/h</div>
+                </div>
+                <div class="row">
+                    <div class="col-names">Wind Chill:</div>
+                    <div class="col-values" id="wind-chill"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> - Víctor H. Neumann - Salta, Argentina</p>
+        <p>Last Modification: <span id="last-modified-date"></span></p>
+    </footer>
+</body>
+
+</html>
