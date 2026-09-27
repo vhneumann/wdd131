@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Um, we’re technically done ! That’s really all it takes.
+   We can take this one step further by stacking the grid areas
+   vertically by default, then build the Holy Grail on larger
+   screens where it looks much better: */
+
+.container {
+    display: grid;
+    grid-template-areas:
+        /* Each area is a row */
+        "header"
+        "left-sidebar"
+        "main"
+        "right-sidebar"
+        "footer";
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f9904a;
+}
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 12rem auto 12rem;
+        grid-template-areas:
+            /* Build the Holy Grail layout */
+            "header header header"
+            "left-sidebar main right-sidebar"
+            "footer footer footer";
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+.left-sidebar {
+    grid-area: left-sidebar;
+}
+
+.right-sidebar {
+    grid-area: right-sidebar;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.container>* {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f38801;
+    border-radius: 0.3rem;
+    box-shadow: 3px 5px 7px rgb(144 80 80);
+
+}
+
+/* this was originated in
+https: //css-tricks.com/almanac/properties/g/grid/grid-template-areas/
+
+The explanations provided a buggy code, with unmatched
+class names between the HTML code and the CSS code.
+I revised it and compared to a CodePen example.
+This page is working now.
+*/
