@@ -1,0 +1,31 @@
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background: #333;
+}
+
+.nav-menu.active { display: block; }
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  background: none;
+  border: 1px solid red;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #faf;
+}
+
+@media (min-width: 768px) {
+  .hamburger { display: none; }
+  .nav-menu { display: flex; position: static; background: none; }
+  .nav-menu ul { display: flex; gap: 20px; list-style: none; }
+}

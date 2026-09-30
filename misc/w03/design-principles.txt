@@ -1,0 +1,5 @@
+TIPOGRAPHY
+
+Use at most 2 or 3 fonts. For variation, play with font weight.
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
