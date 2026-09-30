@@ -1,39 +1,39 @@
-*   {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root   {
+:root {
     font-family: Arial, sans-serif;
-    font-size: 1.75vw;
+    font-size: 3.00vw;
 }
 
 
 
-.centered   {
+.centered {
     padding: 2rem;
     text-align: center;
 }
 
-.right-aligned   {
+.right-aligned {
     padding: 2rem;
     text-align: right;
 }
 
-.bottomed   {
+.bottomed {
     padding: 2rem 0 0 0;
     text-align: center;
 }
 
-.red1   {
+.red1 {
     background-color: #fcc;
 }
 
-.blue1   {
+.blue1 {
     background-color: #ccf;
 }
 
-.green1   {
+.green1 {
     background-color: #cfc;
 }
