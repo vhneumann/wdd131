@@ -79,6 +79,11 @@ main {
   place-items: center;
 }
 
+.label {
+  font-size: 0.8rem;
+  font-variant: small-caps;
+}
+
 /*
 .card {
   margin: 0.25rem;
@@ -89,27 +94,38 @@ main {
 
 section {
   display: flex;
-  margin: 0.25rem;
-  padding: 0.25rem;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #dde;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 20rem;
 }
 
 section img {
-  width: 100%;
+  width: 90%;
   height: auto;
-  margin-top: 1rem;
+  margin: 0.5rem auto;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  display: block;
   box-shadow: 0 0 10px #333;
-}
-
-img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
 
-p {
-  display: block;
+section p,
+h3 {
   text-align: center;
-  margin: 1rem;
+}
+
+section p {
+  font-size: 0.9rem;
+  margin: 0;
   padding: 0;
+}
+
+section h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding-bottom: 0.15rem;
 }
