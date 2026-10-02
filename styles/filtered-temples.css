@@ -90,14 +90,6 @@ main h1 {
   font-variant: small-caps;
 }
 
-/*
-.card {
-  margin: 0.25rem;
-  padding: 0.25rem;
-  text-align: center;
-}
-*/
-
 section {
   display: flex;
   flex-direction: column;
