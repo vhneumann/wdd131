@@ -72,11 +72,17 @@ main {
   margin: 0 auto;
 }
 
+main h1 {
+  text-align: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
   place-items: center;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .label {
@@ -100,7 +106,8 @@ section {
   padding: 0.5rem;
   background-color: #dde;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  height: 20rem;
+  height: 100%;
+  /* overflow: hidden; */
 }
 
 section img {
@@ -109,8 +116,8 @@ section img {
   margin: 0.5rem auto;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 10px #333;
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  object-fit: contain;
+  display: block;
 }
 
 section p,
