@@ -67,6 +67,35 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     // Add more temple objects here...
+    {
+        templeName: "Buenos Aires Argentina",
+        location: "Buenos Aires, Argentina",
+        dedicated: "1986, January, 17",
+        area: 30659,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-aires-argentina-temple-lds-236979-wallpaper.jpg"
+    },
+    {
+        templeName: "Córdoba Argentina",
+        location: "Córdoba, Argentina",
+        dedicated: "2015, May, 17",
+        area: 34369,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cordoba-argentina/400x250/temples-argentina-exterior-cordoba-aerial-1475099-wallpaper.jpg"
+    },
+    {
+        templeName: "Campinas Brazil",
+        location: "Campinas, Brazil",
+        dedicated: "2002, May, 17",
+        area: 48100,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/campinas-brazil/400x250/campinas-brazil-temple-morning-1029896-wallpaper.jpg"
+    },
+    {
+        templeName: "Santiago Chile",
+        location: "Santiago, Chile",
+        dedicated: "1983, September, 15",
+        area: 20831,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/santiago-chile/400x250/santiago-chile-lds-temple-1085562-wallpaper.jpg"
+    }
 ];
 
 createTempleCard();
