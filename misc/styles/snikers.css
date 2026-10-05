@@ -49,6 +49,7 @@ h3,
 h4 {
     color: var(--heading-color);
     text-align: center;
+    width: 100%;
 }
 
 p {
@@ -63,4 +64,20 @@ p {
     columns: 1;
     font-style: italic;
     line-height: 1.5em;
+}
+
+.snikers-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.snikers-element {
+    width: 100%;
+    background-color: yellow;
+}
+
+.snikers-element img{
+    width: 100%;
+    height: auto;
 }
