@@ -82,7 +82,7 @@ main h1 {
   gap: 1rem;
   place-items: center;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .label {
@@ -93,11 +93,14 @@ main h1 {
 section {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 0.25rem;
   margin: 0.5rem;
   padding: 0.5rem;
   background-color: #dde;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
   height: 100%;
   /* overflow: hidden; */
 }
@@ -105,15 +108,17 @@ section {
 section img {
   width: 90%;
   height: auto;
-  margin: 0.5rem auto;
+  margin: 0 auto; /*
   border: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 10px #333;
-  object-fit: contain;
-  display: block;
+  box-shadow: 0 0 10px #333; */
+  object-fit: cover;
+  border-radius: 25%;
+  corner-shape: squircle;
+
 }
 
 section p,
-h3 {
+h2 {
   text-align: center;
 }
 
@@ -123,7 +128,7 @@ section p {
   padding: 0;
 }
 
-section h3 {
+section h2 {
   font-size: 1.1rem;
   margin: 0;
   padding-bottom: 0.15rem;

@@ -103,7 +103,7 @@ createTempleCard();
 function createTempleCard() {
     temples.forEach(temple => {
         let card = document.createElement("section");
-        let name = document.createElement("h3");
+        let name = document.createElement("h2");
         let location = document.createElement("p");
         let dedicated = document.createElement("p");
         let area = document.createElement("p");
@@ -114,6 +114,8 @@ function createTempleCard() {
         dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("width", 250);
+        img.setAttribute("height", "auto");
         img.setAttribute("alt", '${temple.templeName} Temple');
         img.setAttribute("loading", "lazy");
 
