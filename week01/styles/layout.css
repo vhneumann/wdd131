@@ -5,7 +5,6 @@
     --main-bg: #bbb;
     --aside-bg: #cc3;
     --nav-bg: #000;
-
 }
 
 * {
@@ -68,7 +67,7 @@ body {
 .Aside {
     background-color: var(--aside-bg);
     color: contrast-color(var(--aside-bg));
-    grid-column: 3/4;
+    grid-column: 3 / 4;
 }
 
 .navbar {
