@@ -87,7 +87,8 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: overline;
+    background-color: #444;
+    color: #ff0;
 }
 
 .active {
@@ -141,7 +142,7 @@ main img {
 
 .left,
 .right {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     margin: 0;
     padding: 0;
     overflow: hidden;
