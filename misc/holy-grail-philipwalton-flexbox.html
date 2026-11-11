@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail by Philip Walton - Uses Flexbox</title>
+    <meta name="description" content="Anything">
+    <meta name="author" content="Víctor H. Neumann">
+    <style>
+    .HolyGrail {
+      display: flex;
+      min-height: 100dvh; /* try max-height */
+      flex-direction: column;
+    }
+
+    .HolyGrail-body {
+      display: flex;
+      flex: 1;
+    }
+
+    .HolyGrail-content {
+      flex: 1;
+    }
+
+    .HolyGrail-nav, .HolyGrail-ads {
+      /* 12em is the width of the columns */
+      flex: 0 0 12em;
+    }
+
+    .HolyGrail-nav {
+      /* put the nav on the left */
+      order: -1;
+    }
+
+    @media (min-width: 768px) {
+      .HolyGrail-body {
+        flex-direction: row;
+        flex: 1;
+      }
+      .HolyGrail-content {
+        flex: 1;
+      }
+      .HolyGrail-nav, .HolyGrail-ads {
+        /* 12em is the width of the columns */
+        flex: 0 0 12em;
+      }
+    }
+    </style>
+</head>
+
+<body class="HolyGrail">
+  <header>
+    This is the header
+  </header>
+  <div class="HolyGrail-body">
+    <main class="HolyGrail-content">
+      This is the Main
+    </main>
+    <nav class="HolyGrail-nav">
+      This is the Nav-Bar
+    </nav>
+    <aside class="HolyGrail-ads">
+      This is the Aside-Bar
+    </aside>
+  </div>
+  <footer>
+    This is the Footer
+  </footer>
+</body>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something</title>
+    <meta name="description" content="Anything">
+    <meta name="author" content="Víctor H. Neumann">
+    <style>
+      body {
+      min-width: 550px;      /* 2x LC width + RC width */
+      }
+
+      #container {
+        padding-left: 200px;   /* LC width */
+        padding-right: 150px;  /* RC width */
+      }
+
+      #container .column {
+        position: relative;
+        float: left;
+      }
+
+      #center {
+        width: 100%;
+      }
+
+      #left {
+        width: 180px;          /* LC width - padding */
+        padding: 0 10px;
+        right: 200px;          /* LC width */
+        margin-left: -100%;
+        background-color: #dd0;
+      }
+
+      #right {
+        width: 150px;          /* RC width */
+        margin-right: -150px;  /* RC width */
+        background-color: #dd0;
+      }
+
+      #footer {
+        clear: both;
+      }
+
+      /*** IE6 Fix ***/
+      * html #left {
+        left: 150px;           /* RC width */
+      }
+
+    </style>
+</head>
+
+<body>
+
+  <div id="header">
+    This is the header
+  </div>
+
+  <div id="container">
+    <div id="center" class="column">
+      This is the center column
+    </div>
+    <div id="left" class="column">
+      This is the left column
+    </div>
+    <div id="right" class="column">
+      This is the right column
+    </div>
+  </div>
+
+  <div id="footer">
+      This is the footer
+  </div>
+
+</body>
+
+</html>
